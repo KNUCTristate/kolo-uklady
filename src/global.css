@@ -2,6 +2,12 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
   line-height: 1.6;
   color: #222;
+  background-color: #f4f6f9;
+  background-image: 
+    linear-gradient(to right, #e2e8f0 1px, transparent 1px),
+    linear-gradient(to bottom, #e2e8f0 1px, transparent 1px);
+  background-size: 32px 32px;
+  margin: 0;
 }
 
 h1, h2, h3 {

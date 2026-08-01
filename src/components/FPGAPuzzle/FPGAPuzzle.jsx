@@ -1,43 +1,7 @@
 import React, { useState } from "react";
 import confetti from "canvas-confetti";
+import { puzzles } from '../../data/puzzles.js';
 import "./FPGAPuzzle.css";
-
-const puzzles = [
-  {
-    question: "Co będzie wynikiem bramki AND dla A=1, B=0?",
-    options: ["0", "1", "Zależy od napięcia progowego"],
-    correct: 0,
-    fact: "Bramka AND daje 1 tylko wtedy, gdy wszystkie wejścia są równe 1."
-  },
-  {
-    question: "Ile stanów może przyjąć 3-bitowy licznik binarny?",
-    options: ["6", "7", "8"],
-    correct: 2,
-    fact: "3 bity to 2³ = 8 stanów, od 000 do 111."
-  },
-  {
-    question: "Jak działa przerzutnik D?",
-    options: [
-      "Kopiuje stan wejścia przy zboczu zegara",
-      "Sumuje sygnały wejściowe",
-      "Porównuje sygnał z poprzednim stanem"
-    ],
-    correct: 0,
-    fact: "Przerzutnik D to fundament rejestrów i liczników."
-  },
-  {
-    question: "Jaki kod binarny odpowiada liczbie dziesiętnej 13?",
-    options: ["1101", "1011", "1110"],
-    correct: 0,
-    fact: "13 = 1101 w binarnym."
-  },
-  {
-    question: "Które z poniższych to funkcja OR?",
-    options: ["Y = A + B", "Y = A • B", "Y = ¬(A • B)"],
-    correct: 0,
-    fact: "OR zwraca 1, jeśli dowolne wejście to 1."
-  }
-];
 
 // progi certyfikatów:
 const titles = [
@@ -47,9 +11,18 @@ const titles = [
 ];
 
 export default function FPGAPuzzle() {
-  const [current, setCurrent] = useState(
-    puzzles[Math.floor(Math.random() * puzzles.length)]
-  );
+  const getRandomIndex = (excludeIndex = null) => {
+    if (puzzles.length <= 1) return 0;
+    let newIndex;
+    do {
+      newIndex = Math.floor(Math.random() * puzzles.length);
+    } while (newIndex === excludeIndex);
+    return newIndex;
+  };
+
+  const [currentIndex, setCurrentIndex] = useState(() => getRandomIndex());
+  const current = puzzles[currentIndex];
+
   const [selected, setSelected] = useState(null);
   const [answered, setAnswered] = useState(false);
   const [points, setPoints] = useState(0);
@@ -83,7 +56,8 @@ export default function FPGAPuzzle() {
   const handleNext = () => {
     setAnswered(false);
     setSelected(null);
-    setCurrent(puzzles[Math.floor(Math.random() * puzzles.length)]);
+    // Losujemy nowe pytanie, przekazując aktualny indeks, aby go wykluczyć
+    setCurrentIndex((prev) => getRandomIndex(prev));
   };
 
   return (

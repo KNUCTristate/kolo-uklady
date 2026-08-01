@@ -20,6 +20,7 @@ I wtedy, wejść na stronę (w cmd, nie w PS):
 npm start 
 
 Jeśli po wejściu nic nie widać, należy wejść w tryb developerski (CTRL+SHIFT+J zazwyczaj), tam wyświetli się błąd, 
-najpewniej po instalacji nie będą zgadzały się wersje, trzeba zainstalować tę samą nowszą wersję dla react lub react-dom.
+najpewniej po instalacji nie będą zgadzały się wersje, trzeba zainstalować tę samą nowszą wersję dla react lub react-dom, np.:
+npm install react@19.2.4
 
 * instalowany był jeszcze komponent react-vertical-timeline-component, ale był przestarzały, jak coś z timelineami nie działa, to można doinstalować, może pomoże

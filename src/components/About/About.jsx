@@ -15,7 +15,7 @@ export default function About({ logoCircle }) {
           />
 
           {aboutData.paragraphs.map((text, index) => (
-            <p key={index}>{text}</p>
+            <p key={index} style={{ fontWeight: 'bold' }}>{text}</p>
           ))}
         </>
       }
