@@ -12,3 +12,26 @@
 .section p {
   text-align: center;
 }
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-section .contact-box {
+  display: inline-block;
+  padding: 1.5em 2em;
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.contact-section .contact-box:hover {
+  transform: translateY(-5px);
+  border-color: #3b82f6;
+}

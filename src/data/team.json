@@ -19,5 +19,47 @@
     "description": "Zajmuje się syntezą logiki i implementacją układów cyfrowych na platformach FPGA. Współautor projektu zdalnego laboratorium.",
     "imageKey": "jakub",
     "linkedin": "https://www.linkedin.com/in/jakub-blizniuk/"
-  }
+  },
+  {
+    "name": "Mikołaj Smolarek",
+    "role": "Inżynier systemów wbudowanych",
+    "description": "Specjalizuje się w programowaniu mikrokontrolerów i integracji czujników z platformami obliczeniowymi. Odpowiada za warstwę akwizycji danych.",
+    "imageKey": "mikolaj",
+    "linkedin": "https://www.linkedin.com/in/mikolaj-smolarek/"
+  },
+  {
+    "name": "Kacper Capiga",
+    "role": "Specjalista ds. sieci",
+    "description": "Projektuje architekturę sieciową dla systemów rozproszonych. Skupia się na optymalizacji przesyłu danych telemetrycznych w czasie rzeczywistym.",
+    "imageKey": "kacper",
+    "linkedin": "https://www.linkedin.com/in/kacper-capiga/"
+  },
+  {
+    "name": "Karol Godlewski",
+    "role": "Architekt systemów FPGA",
+    "description": "Zajmuje się projektowaniem struktur logicznych i optymalizacją czasu propagacji w układach cyfrowych. Entuzjasta wysokiej wydajności sprzętowej.",
+    "imageKey": "karolg",
+    "linkedin": "https://www.linkedin.com/in/karol-godlewski/"
+  },
+  {
+    "name": "Kamil Koryciński",
+    "role": "Deweloper oprogramowania",
+    "description": "Tworzy aplikacje wspomagające wizualizację danych z systemów pomiarowych. Zajmuje się backendem i obsługą baz danych telemetrycznych.",
+    "imageKey": "kamil",
+    "linkedin": "https://www.linkedin.com/in/kamil-korycinski/"
+  },
+  {
+    "name": "Karol Pacwa",
+    "role": "Inżynier testów i weryfikacji",
+    "description": "Odpowiada za proces symulacji logiki i weryfikację poprawności działania urządzeń. Dba o zgodność systemów z założeniami projektowymi.",
+    "imageKey": "karolp",
+    "linkedin": "https://www.linkedin.com/in/karol-pacwa/"
+  },
+  {
+    "name": "Jan Marcinkiewicz",
+    "role": "Asystent projektu",
+    "description": "Wspiera zespół w codziennych zadaniach technicznych i dokumentacji. Pomaga w utrzymaniu infrastruktury projektowej oraz dba o sprawną komunikację w zespole.",
+    "imageKey": "jan",
+    "linkedin": "https://www.linkedin.com/in/jan-marcinkiewicz/"
+  }  
 ]

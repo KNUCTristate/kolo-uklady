@@ -35,6 +35,7 @@ const animatedSections = [
           <Section
             id="kontakt"
             title="Kontakt"
+            isContact={true}
             content="📧 kolo.tristate@interia.pl 🌐 Facebook / LinkedIn"
           />
           <Footer />

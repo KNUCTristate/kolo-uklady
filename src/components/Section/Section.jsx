@@ -1,10 +1,10 @@
 import React from "react";
 import "./Section.css";
 
-const Section = ({ id, title, content }) => (
-  <section id={id} className="section">
+const Section = ({ id, title, content, isContact = false }) => (
+  <section id={id} className={`section ${isContact ? 'contact-section' : ''}`}>
     <h2>{title}</h2>
-    <p style={{ fontWeight: 'bold' }}>{content}</p>
+    <p className={isContact ? 'contact-box' : ''}>{content}</p>
   </section>
 );
 
