@@ -1,11 +1,11 @@
-import project1 from "./project1.png";
-import project2 from "./project2.png";
-import project3 from "./project3.png";
+import petalinux from "./petalinux.png";
+import remoteLab from "./remoteLab.png";
+import hackathon from "./hackathon.png";
 
 const projectImages = {
-  petalinux: project1,
-  remoteLab: project2,
-  hackathon: project3,
+  petalinux,
+  remoteLab,
+  hackathon,
 };
 
 export default projectImages;

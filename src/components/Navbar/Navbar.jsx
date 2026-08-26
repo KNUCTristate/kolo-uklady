@@ -19,7 +19,7 @@ const Navbar = ({ logo }) => {
             <li><Link to="/team">Zespół</Link></li>
             <li><Link to="/projekty">Projekty</Link></li>
             <li><Link to="/puzzle">Puzzle</Link></li>
-            <li><a href="#kontakt" onClick={toggleMenu}>Kontakt</a></li>
+            <li><Link to="/contact">Kontakt</Link></li>
           </ul>
         </nav>
         <div className="menu-toggle" onClick={toggleMenu}>☰</div>

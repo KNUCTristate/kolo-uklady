@@ -6,6 +6,7 @@ export { default as Stats } from "./Stats/Stats";
 export { default as Gallery } from "./Gallery/Gallery";
 export { default as Team } from "./Team/Team";
 export { default as Projects } from "./Projects/Projects";
+export { default as Map } from "./Map/Map";
 export { default as Footer } from "./Footer/Footer";
 export { default as Puzzle } from "./Puzzle/Puzzle";
 export { default as FPGAPuzzle } from "./FPGAPuzzle/FPGAPuzzle";

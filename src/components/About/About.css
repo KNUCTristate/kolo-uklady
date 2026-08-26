@@ -1,0 +1,36 @@
+#about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.about-card {
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 2.5em 2em;
+  max-width: 800px; 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;  
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  border-color: #3b82f6;
+}
+
+.about-card .logo-big {
+  width: 120px;
+  height: auto;
+  margin-bottom: 1.5em;
+}
+
+.about-card p {
+  margin-bottom: 1em;
+  color: #475569;
+}
