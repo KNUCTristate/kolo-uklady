@@ -11,8 +11,8 @@ export default function Stats() {
 
   const stats = [
     { value: 3, suffix: "+", label: "Projektów" },
-    { value: 15, suffix: "", label: "Lat działalności" },
-    { value: 15, suffix: "+", label: "Aktywnych członków" },
+    { value: 10, suffix: "", label: "Lat działalności" },
+    { value: 9, suffix: "+", label: "Aktywnych członków" },
   ];
 
   return (

@@ -22,5 +22,53 @@
     "long": "Członkowie koła przygotowali się i wzięli udział w ogólnopolskim FPGA Hackathonie w Krakowie. W ramach wydarzenia zespół opracował koncepcję innowacyjnego projektu opartego na logice programowalnej, integrując moduły w Verilogu oraz system komunikacji z mikrokontrolerem. Udział w konkursie pozwolił zdobyć praktyczne doświadczenie i nawiązać kontakty z branżą.",
     "imageKey": "hackathon",
     "github": "https://github.com/example/fpga-hackathon"
+  },
+  {
+    "id": "spotkania-kola",
+    "title": "Cykliczne spotkania koła",
+    "short": "Regularne spotkania warsztatowe i wymiana wiedzy.",
+    "long": "Spotkania organizowane co około 2 miesiące, podczas których omawiamy nowe oraz bieżące projekty techniczne. Dzielimy się wiedzą, przeprowadzamy wewnętrzne warsztaty i wspólnie analizujemy trudniejsze zagadnienia z zakresu systemów wbudowanych.",
+    "imageKey": "meetings",
+    "github": "https://github.com/example/tristate-meetings"
+  },
+  {
+    "id": "mini-hackathon",
+    "title": "Wydziałowy mini hackathon",
+    "short": "Szybkie programowanie i rozwiązywanie zadań w sali koła.",
+    "long": "Symulujemy prawdziwy hackathon w warunkach klubowych. Podzieleni na zespoły studenci programują układy, rozwiązują ciekawe i niestandardowe zadania algorytmiczno-sprzętowe, rywalizując w przyjaznej atmosferze w sali koła.",
+    "imageKey": "mini_hackathon",
+    "github": "https://github.com/example/tristate-minihackathon"
+  },
+  {
+    "id": "tutoriale",
+    "title": "Tutoriale i dokumentacje embedded",
+    "short": "Tworzenie materiałów edukacyjnych dla członków koła.",
+    "long": "Projekt polegający na tworzeniu przystępnych samouczków do trudnych zagadnień embedded dla innych uczestników koła. Opracowujemy czytelną dokumentację krok po kroku, która ułatwia wdrażanie nowych osób w świat FPGA i mikrokontrolerów.",
+    "imageKey": "tutorials",
+    "github": "https://github.com/example/tristate-tutorials"
+  },
+  {
+    "id": "wyjazdy-zagraniczne",
+    "title": "Wyjazdy na kursy i praktyki zagraniczne",
+    "short": "Stażowe wyjazdy edukacyjne m.in. na Tajwan i do Niemiec.",
+    "long": "Członkowie koła mają szansę uczestniczyć w prestiżowych wyjazdach na kursy i praktyki zagraniczne (np. na Tajwanie czy w Niemczech). To unikalna okazja do poszerzenia wiedzy inżynieryjnej w międzynarodowym środowisku i poznania globalnej branży.",
+    "imageKey": "trips",
+    "github": "https://github.com/example/tristate-international"
+  },
+  {
+    "id": "granty-rektorskie",
+    "title": "Granty rektorskie i finansowania",
+    "short": "Duże projekty badawcze angażujące całe koło.",
+    "long": "Realizacja olbrzymich projektów finansowanych z grantów rektorskich, które angażują całe koło i oferują wynagrodzenie dla studentów. Projekty łączą zaawansowane techniki informatyczne: od konteneryzacji i połączeń zdalnych po dedykowane systemy webowe.",
+    "imageKey": "grants",
+    "github": "https://github.com/example/tristate-grants"
+  },
+  {
+    "id": "przyjazna-atmosfera",
+    "title": "Kultura i przestrzeń koła",
+    "short": "Naturalne środowisko rozwoju, offtopic i własna baza lokalu.",
+    "long": "Dysponujemy dwoma wspólnymi pokojami (większy służy do spotkań, mniejszy do herbatki, pracy przy komputerach i odpoczynku). To przyjazna atmosfera sprzyjająca pogłębianiu wiedzy embedded, ułatwione rekrutacje do firm takich jak Cadence oraz zakulisowy rozwój wspólnych pasji.",
+    "imageKey": "atmosphere",
+    "github": "https://github.com/example/tristate-community"
   }
 ]
