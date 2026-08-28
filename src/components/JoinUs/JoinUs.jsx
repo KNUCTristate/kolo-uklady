@@ -3,16 +3,48 @@ import Modal from "react-modal";
 import { useForm } from "react-hook-form";
 import "./JoinUs.css";
 
-Modal.setAppElement("#root"); // wymagane przez react-modal dla dostępności
+Modal.setAppElement("#root");
 
 export default function JoinUs() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [statusMessage, setStatusMessage] = useState("");
   const { register, handleSubmit, reset } = useForm();
 
-  const onSubmit = (data) => {
-    alert(`Dziękujemy ${data.name}! Skontaktujemy się z Tobą na ${data.email}.`);
-    reset();
-    setIsOpen(false);
+  const onSubmit = async (data) => {
+    setIsSubmitting(true);
+    setStatusMessage("");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "600c3805-b2f7-4c59-8b8c-9c4d933ead64",
+          subject: "Nowe zgłoszenie do Koła Naukowego!",
+          name: data.name,
+          email: data.email,
+          message: data.reason || "Brak dodatkowego opisu",
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        alert(`Dziękujemy ${data.name}! Zgłoszenie zostało wysłane na skrzynkę koła.`);
+        reset();
+        setIsOpen(false);
+      } else {
+        setStatusMessage("Wystąpił błąd przy wysyłaniu. Spróbuj ponownie.");
+      }
+    } catch (error) {
+      setStatusMessage("Błąd sieci. Sprawdź połączenie z internetem.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -48,8 +80,10 @@ export default function JoinUs() {
           <label>Dlaczego chcesz do nas dołączyć?</label>
           <textarea {...register("reason")} placeholder="Bo lubię FPGA" />
 
-          <button type="submit" className="send-btn">
-            Wyślij
+          {statusMessage && <p style={{ color: "#ff6b6b", fontSize: "0.9rem" }}>{statusMessage}</p>}
+
+          <button type="submit" className="send-btn" disabled={isSubmitting}>
+            {isSubmitting ? "Wysyłanie..." : "Wyślij"}
           </button>
         </form>
       </Modal>
